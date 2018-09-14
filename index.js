@@ -30,10 +30,14 @@ function prependKitten(name) {
 }
 
 function removeLastKitten(){
-  
+  var newLitter = Array.from(kittens);
+  newLitter.pop(name);
+  return newLitter;
 }
 
 function removeFirstKitten() {
-  
+  var newLitter = Array.from(kittens);
+  newLitter.shift(name);
+  return newLitter;
 }
 
